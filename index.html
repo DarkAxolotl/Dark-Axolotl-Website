@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    (function () {
+      const pathname = window.location.pathname;
+
+      // Si ya estás en /es.html o /en.html, no redirigir
+      if (pathname.endsWith('es.html') || pathname.endsWith('en.html')) return;
+
+      // Detectar idioma del navegador
+      const lang = navigator.language || navigator.userLanguage;
+
+      // Redirigir según idioma
+      if (lang.startsWith('es')) {
+        window.location.replace('es.html');
+      } else {
+        window.location.replace('en.html');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redireccionando...</p>
+</body>
+</html>
