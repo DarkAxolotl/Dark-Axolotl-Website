@@ -746,14 +746,23 @@ textarea.form-control {
     border-radius: 12px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     #playlists .col-md-6 {
         width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #playlists .row {
+        flex-direction: column;
+        align-items: center;
         gap: 1rem;
         margin-bottom: 2rem;
+    }
+
+    #playlists iframe {
+        width: 100%;
     }
 }
 
