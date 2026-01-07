@@ -764,6 +764,16 @@ textarea.form-control {
     #playlists iframe {
         width: 100%;
     }
+
+    /* Footer Responsive */
+    .footer .row {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer .text-lg-start {
+        text-align: center;
+    }
 }
 
 /* Responsive */
